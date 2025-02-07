@@ -182,7 +182,7 @@ p {
 }
 
 .custom-hr-color-1 {
-	background: #3f3035 !important;
+	background: #f8b517 !important;
 }
 
 // Custom Position
@@ -417,7 +417,7 @@ p {
 		&:hover {
 			a {
 				background: transparent !important;
-				color: #da7940 !important;
+				color: #509b44 !important;
 			}
 		}
 	}
@@ -594,7 +594,7 @@ p {
 	    			right: -2px;
 	    			left: auto;
 	    			width: 100%;
-	    			border-top: 1px solid #da7940;
+	    			border-top: 1px solid #509b44;
 	    			transform: translateY(-50%);
 	    		}
 
@@ -606,8 +606,8 @@ p {
 	    			right: 0;
 	    			width: 25px;
 	    			height: 25px;
-	    			border-top: 1px solid #da7940;
-	    			border-right: 1px solid #da7940;
+	    			border-top: 1px solid #509b44;
+	    			border-right: 1px solid #509b44;
 	    			transform: translateY(-50%) rotate(45deg);
 	    		}
 			}
@@ -1304,7 +1304,7 @@ ul.custom-comments-style {
     position: relative;
     bottom: 0;
     left: 0;
-    background: #36252b;
+    background: #212529;
     width: 100%;
     height: 96px;
     overflow: hidden;
