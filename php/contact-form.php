@@ -36,7 +36,7 @@ $mail->addAddress('enquiry@khanakhazananj.com', 'Contact Us');
 // $servername = "localhost";
 // $username = "root";
 // $password = "";
-// $database = "khana_khazana";
+// $database = "u768511311_arise";
 
  $servername = "127.0.0.1:3306";
  $username = "u768511311_khana_khazana";
@@ -52,8 +52,8 @@ if (!$conn) {
   echo "data successfully recorded";
 }
 
- $sql = "INSERT INTO `contact` (`name`, `number`, `email`,  `message`) VALUES
- ('$form_name', '$contact_phone', '$contact_email', '$contact_message');";
+ $sql = "INSERT INTO `contact` (`name`, `number`, `email`,`message`) VALUES
+ ('$form_name', '$contact_phone', '$contact_email','$contact_message');";
  if (mysqli_query($conn, $sql)) {
        echo "New record created successfully";
  } else {
@@ -118,12 +118,11 @@ $mail_body.='<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-mic
 															   <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
 																  <tbody>
 																	 <tr>
-																		<td align="center" style="font-family: Open Sans, Helvetica, Tahoma, Arial, sans-serif; font-size: 0px; padding: 0; word-break: break-word;"> 
+<td align="center" style="font-family: Open Sans, Helvetica, Tahoma, Arial, sans-serif; font-size: 0px; padding: 0; word-break: break-word;"> 
 																			<div style="font-family: Open Sans, Helvetica, Tahoma, Arial, sans-serif; font-size: 20px; font-weight: bold; color: #4F4F4F;"> 
 																				Khana Khazana
 																			</div>
-																		</td>																	
-																	 </tr>
+																		</td>																	 </tr>
 																  </tbody>
 															   </table>
 															</td>
@@ -160,7 +159,6 @@ $mail_body.='<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-mic
 																				 <li><strong>Name</strong> - '.$form_name.'</li>
 																				 <li><strong>Email</strong> -'. $contact_email.'</li>
 																				 <li><strong>Phone Number</strong> - '.$contact_phone.'</li>
-																				 <li><strong>Address</strong> - '.$contact_address.'</li>
 																				 <li><strong>Message</strong> -'. $contact_message.'</li>
 																			  </ul>
 																			  <br>
@@ -237,5 +235,5 @@ jQuery('#sucessMessage').html('<h2>Thank you for filling out your information!</
 }
 ?>
 <script language="javascript">
-window.open("https://khanakhazananj.com/","_self");
+window.open("https://khanakhazananj.com","_self");
 </script>
